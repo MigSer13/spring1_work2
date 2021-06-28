@@ -11,12 +11,11 @@ import java.util.List;
 @Scope("prototype")
 public class Cart {
     private ProductRepository productRepository;
+    private HashMap<Integer, Product> products = new HashMap<>();
 
     public HashMap<Integer, Product> getProducts() {
         return products;
     }
-
-    private HashMap<Integer, Product> products;
 
     @Autowired
     public void setProductRepository(ProductRepository productRepository) {
