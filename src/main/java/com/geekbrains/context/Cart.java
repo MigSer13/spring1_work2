@@ -11,12 +11,8 @@ import java.util.List;
 @Scope("prototype")
 public class Cart {
     private ProductRepository productRepository;
-    private HashMap<Integer, Product> products;
+    private HashMap<Integer, Product> products = new HashMap<>();
 
-    @Autowired
-    public void setProducts(HashMap<Integer, Product> products) {
-        this.products = products;
-    }
     public HashMap<Integer, Product> getProducts() {
         return products;
     }

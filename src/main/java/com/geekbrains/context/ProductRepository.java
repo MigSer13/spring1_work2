@@ -16,9 +16,9 @@ public class ProductRepository {
         productList = new ArrayList<>(Arrays.asList(
            new Product(1, "Яблоко", 15L),
            new Product(2, "Хлеб", 41L),
-           new Product(1, "Огурец", 13L),
-           new Product(1, "Молоко", 60L),
-           new Product(1, "Сок", 75L)
+           new Product(3, "Огурец", 13L),
+           new Product(4, "Молоко", 60L),
+           new Product(5, "Сок", 75L)
         ));
     }
 
